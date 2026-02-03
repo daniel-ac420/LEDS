@@ -1,0 +1,149 @@
+.section--advantages .tabs {
+    position: relative;
+	display: flex;
+	align-items: flex-start;
+	gap: 50px;
+}
+
+.section--advantages .tab-buttons {
+    display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 20px;
+	flex-basis: calc((100% - 50px) / 2);
+	max-width: calc((100% - 50px) / 2);
+}
+
+.section--advantages .tab-button {
+	width: max-content;
+    padding: 20px;
+    font-size: 24px;
+	line-height: 1.2;
+	color: var(--colorBlackFourth);
+	background-color: transparent;
+    border: 1px solid var(--colorBlackFourth);
+    border-radius: 1000px;
+	cursor: pointer;
+    transition: all 0.5s;
+}
+
+.section--advantages .tab-button:hover {
+	color: var(--colorWhite);
+	background-color: var(--colorBlackSeventh);
+}
+
+.section--advantages .tab-button.active {
+	color: var(--colorWhite);
+	background-color: var(--colorBlackFourth);
+}
+
+.section--advantages .tab {
+    display: none;
+	padding: 50px;
+	background-color: var(--colorWhite);
+	border-radius: 20px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.section--advantages .tab.active {
+    display: block;
+    opacity: 1;
+}
+
+.section--advantages .tab-content {
+	flex-basis: calc((100% - 50px) / 2);
+	max-width: calc((100% - 50px) / 2);
+	flex-shrink: 0;
+}
+
+.section--advantages .tab-content__title {
+	margin-bottom: 20px;
+	font-size: 32px;
+	line-height: 1.2;
+	color: var(--colorBlackThird);
+}
+
+.section--advantages .tab-content__text {
+	margin-bottom: 10px;
+	font-size: 20px;
+	color: var(--colorBlackSeventh);
+}
+
+.section--advantages .tab-content__text:last-of-type {
+	margin-bottom: 0;
+}
+
+.section--advantages .content__button-box {
+	margin-top: 45px;
+}
+
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 1600px) {
+
+	.section--advantages .tab-button {
+		width: auto;
+	}
+	
+}
+/* ↑↑↑ 1600px ↑↑↑ */
+
+
+
+@media (max-width: 1024px) {
+	
+	.section--advantages .tabs {
+		flex-direction: column;
+	}
+	
+	.section--advantages .tab-buttons {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		flex-basis: 100%;
+		max-width: 100%;
+		padding-bottom: 10px;
+		overflow-x: auto;
+		
+	}
+	
+	.section--advantages .tab-button {
+/*		width: max-content;*/
+		white-space: nowrap;
+	}
+	
+	.section--advantages .tab-content {
+		flex-basis: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+	
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 767px) {
+
+	.section--advantages .tab-buttons {
+		display: none;
+	}
+
+	.section--advantages .tab-content {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		gap: 12px;
+		overflow-x: auto;
+		padding-bottom: 10px;
+	}
+	
+	.section--advantages .tab {
+		display: block !important;
+		opacity: 1 !important;
+	}
+	
+}
+/* ↑↑↑ 767px ↑↑↑ */

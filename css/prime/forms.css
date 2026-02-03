@@ -1,0 +1,182 @@
+/* */
+
+.section--form {
+	padding: 30px 25px;
+	background-color: var(--colorWhite);
+	border-radius: 20px;
+}
+
+.form .title--section {
+	margin-bottom: 10px;
+	font-size: 32px;
+}
+
+.form .description {
+	font-size: 20px;
+/*	line-height: 1.5;*/
+	color: var(--colorBlackMain);
+}
+
+.form-socials {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin: 20px 0 15px;
+}
+
+.form-socials__text {
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: var(--colorBlackMain);
+}
+
+.form .footer__divider {
+	margin-bottom: 30px;
+	background-color: var(--colorGrayBG);
+}
+
+.fieldset-box {
+	display: flex;
+	gap: 10px;
+}
+
+.form-fieldset {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	flex-basis: calc((100% - 10px) / 2);
+	max-width: calc((100% - 10px) / 2);
+}
+
+.form-fieldset_textarea {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-fieldset__input {
+    width: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23FF0000"><text x="0" y="15" font-size="20">*</text></svg>');
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 20px;
+}
+
+.form-fieldset__input[name="email"] {
+	background-image: none;
+}
+
+.textarea {
+/*	display: block;*/
+    flex-grow: 1;
+	width: 100%;
+	resize: none;
+	
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="%23FF0000"><text x="0" y="15" font-size="20">*</text></svg>');
+    background-repeat: no-repeat;
+    background-position: 15px 20px;
+    background-size: 20px;
+}
+
+.submit-box {
+	display: flex;
+/*	align-items: flex-start;*/
+	gap: 20px;
+}
+
+.form-text .text__link {
+	display: inline;
+}
+
+.section--form .header__top-navigation-link_whatsapp {
+    width: 94px;
+    height: 95px;
+}
+
+.section--form .header__top-navigation-link_telegram {
+    width: 77px;
+    height: 78px;
+}
+
+.section--form:not(.section--form-consult_map) .submit-box {
+	margin-top: 25px;
+}
+
+
+
+/* --- FORM VALIDATE --- */
+
+.input-valid {
+    background-color: greenyellow !important;
+}
+
+.input-error {
+    background-color: palevioletred !important;
+}
+
+.invalid-feedback {
+    display: block;
+    visibility: hidden;
+	height: 0;
+    color: palevioletred;
+}
+
+
+
+/* --- ADAPTING --- */
+
+
+@media (max-width: 767px) {
+	
+	.form .title--section {
+		margin-bottom: 20px;
+		font-size: 24px;
+		text-align: center;
+	}
+	
+	.footer .form .title--section {
+		text-transform: none;
+	}
+	
+	.fieldset-box {
+		flex-direction: column;
+	}
+	
+	.form-fieldset {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	
+	.submit-box {
+		flex-direction: column;
+		margin-top: 40px;
+	}
+
+	.button-form {
+		width: 100%;
+	}
+
+}
+/* ↑↑↑ 767px ↑↑↑ */
+
+
+
+@media (max-width: 640px) {
+	
+	.form .description {
+		display: none;
+	}
+	
+	.form-socials {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		gap: 15px;
+	}
+
+	.form-socials__text {
+		font-weight: 600;
+		text-transform: none;
+	}
+
+}
+/* ↑↑↑ 640px ↑↑↑ */

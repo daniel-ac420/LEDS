@@ -1,0 +1,27 @@
+.section--banner-company {
+	
+}
+
+.section--banner-company .banner__part_info {
+	padding: 50px 50px 30px 50px;
+}
+
+.section--banner-company .slider__item-tags_main {
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+
+.section--banner-company .text_pages {
+	margin-bottom: 70px;
+	line-height: 1.5;
+}
+
+
+
+@media (max-width: 767px) {
+	
+    .section--banner-project .slider-tags:not(.slider__item-tags_main) {
+        justify-content: flex-start;
+    }
+	
+}

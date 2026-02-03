@@ -1,0 +1,115 @@
+.mobile-menu {
+	position: fixed;
+	inset: 0;
+	z-index: 1000000;
+	transform: translateX(-200%);
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: all 0.5s;
+}
+
+.mobile-menu .inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.mobile-menu.active {
+/*	background-color: mediumpurple;*/
+	background-color: var(--colorGrayBG);
+	transform: translateX(0);
+}
+
+.mobile-menu .header__bottom-navigation_center, 
+.mobile-menu .header__bottom-navigation_right {
+	display: flex;
+}
+
+.mobile-menu__close {
+	flex-grow: 0;
+    flex-shrink: 0;
+	border: none;
+	background-color: transparent;
+	font-size: 40px;
+	font-weight: 300;
+	width: 23px;
+	height: 23px;
+/*	padding: 20px;*/
+	background-image: url("../../icons/header/icon-mobile-menu-close.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* temporary */
+
+.mobile-menu .header__bottom-navigation:nth-child(1) {
+	margin-bottom: 35px;
+}
+
+.mobile-menu .header__bottom-navigation:nth-child(2) {
+	flex-direction: column;
+}
+
+.mobile-menu .header__bottom-navigation_center, 
+.mobile-menu .header__bottom-navigation_right {
+	flex-direction: column;
+	width: 100%;
+}
+
+.mobile-menu .dropdown-list.visible {
+	position: static;
+}
+
+.mobile-menu .header__top-navigation {
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.mobile-menu .header__top-navigation .header__top-navigation-list {
+	flex-direction: column;
+	gap: 15px;
+}
+
+.mobile-menu__socials-box {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.mobile-menu .dropdown-link {
+	white-space: normal;
+}
+
+.mobile-menu .header__bottom-navigation-list-item {
+	min-width: 100%;
+}
+
+.mobile-menu .header__bottom-navigation-link, 
+.mobile-menu .header__bottom-navigation-link.dropdown {
+    min-width: 100%;
+    text-align: center;
+}
+
+.mobile-menu .header__top-navigation-list-item_phone {
+	margin-bottom: 15px;
+}
+
+.mobile-menu .header__top-navigation-list-item_phone .header__top-navigation-link {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+.mobile-menu .header__top-navigation-link_whatsapp {
+	width: 66px;
+    height: 68px;
+}
+
+.mobile-menu .header__top-navigation-link_telegram {
+    width: 54px;
+    height: 56px;
+}
+
+.mobile-menu .header__top-navigation-list-item:first-of-type {
+	font-size: 16px;
+	font-weight: 400;
+}

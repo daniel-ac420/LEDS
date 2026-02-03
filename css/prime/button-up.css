@@ -1,0 +1,60 @@
+﻿/* --- BUTTON-UP --- */
+
+.button-up {
+	position: fixed;
+/*	left: 2.5vw;*/
+	right: 2.5vw;
+	bottom: 5vh;
+	z-index: 10000;
+	width: 74px;
+	height: 74px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	background-color: #9966cc;*/
+/*	background: conic-gradient(from 45deg at 60% -25%, #433F86, #433d82, #323171, #2D2359, #432258, #CA4982, #652A61, #8C316C, #E773AB, #CA4982);*/
+/*	background-color: transparent;*/
+	background-color: var(--colorBlackFifth);
+	background-image: url("../../icons/footer/icon-button-up.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 50%;
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.25);
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.button-up::before {
+  content: "";
+  position: absolute; 
+  inset: 5px;
+/*  background: conic-gradient(from 45deg at 40% -25%, #433F86, #433d82, #323171, #2D2359, #432258, #CA4982, #652A61, #8C316C, #E773AB, #CA4982);*/
+  filter: blur(19px);
+  transform: translate3d(-19px,19px,-1px);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.button-up:hover {
+	filter: invert(0.0625);
+	opacity: 0.9;
+}
+
+.button-up_hide {
+	display: none;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-5%);
+  }
+
+  50% {
+    transform: translateY(5%);
+  }
+
+  100% {
+    transform: translateY(-5%);
+  }
+}

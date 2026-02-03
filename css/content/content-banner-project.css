@@ -1,0 +1,134 @@
+.section--banner-project {
+	
+}
+
+.section--banner-project__background {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: url("../../images/catalog/projects-banner-image.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.wrapper_mobile {
+	display: none;
+}
+
+.section--banner-project .banner__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.section--banner-project .banner__part_info {
+	max-width: 50%;
+	padding: 40px 40px 40px 50px;
+	background-color: var(--colorWhite);
+	border-radius: 20px;
+}
+
+.section--banner-project .slider-tags {
+	position: static;
+}
+
+.section--banner-project .slider__item-title {
+	margin-bottom: 15px;
+}
+
+.section--banner-project .slider__item-tags_main {
+	margin: 40px 0 10px;
+}
+
+.section--banner-project .button-box {
+	gap: 5px;
+	margin: 35px 0;
+}
+
+#gallery {
+/*	scroll-margin-top: 360px;*/
+}
+
+.button_gallery {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	padding: 10px 25px 10px 12px;
+	background-color: var(--colorWhite);
+}
+
+.button_gallery:hover {
+	background-color: var(--colorYellow);
+}
+
+.button_gallery .button__decor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 1180px) {
+	
+	.section--banner-project .banner__part_info {
+		max-width: 66%;
+	}
+
+}
+/* ↑↑↑ 1180px ↑↑↑ */
+
+
+
+@media (max-width: 991px) {
+	
+	.section--banner-project .banner__inner {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+	}
+
+}
+/* ↑↑↑ 991px ↑↑↑ */
+
+
+
+@media (max-width: 768px) {
+	
+	.section--banner-project .banner__part_info {
+		max-width: 75%;
+	}
+
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+
+
+@media (max-width: 767px) {
+	
+	.section--banner-project__background {
+		min-height: 350px;
+		border-radius: 20px;
+	}
+	
+	.section--banner-project .banner__part_info {
+		max-width: 100%;
+		width: 100%;
+	}
+	
+	.section--banner-project .banner__inner .banner__part:not(.banner__part_info) {
+		display: none;
+	}
+	
+	.section--banner-project .button-box {
+		gap: 15px;
+	}
+	
+	.section--banner-project .slider-tags:not(.slider__item-tags_main) {
+		justify-content: center;
+	}
+	
+}
+/* ↑↑↑ 767px ↑↑↑ */

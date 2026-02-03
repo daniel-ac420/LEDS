@@ -1,0 +1,158 @@
+.section--stages .subtitle {
+    max-width: 50%;
+    margin-bottom: 50px;
+}
+
+.section--stages .stages__items {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 18px;
+	margin: 20px 0;
+}
+
+.section--stages .stages__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+/*	max-width: 40%;*/
+	max-width: calc(50% - 12px);
+	padding: 20px 15px;
+	background-color: var(--colorWhite);
+	border-radius: 20px;
+}
+
+.section--stages .stages__title-box {
+	display: flex;
+	justify-content: space-between;
+	max-width: 75%;
+	margin-bottom: 50px;
+}
+
+.section--stages .stages__duration {
+	position: absolute;
+	right: 15px;
+	font-size: 20px;
+}
+
+.section--stages .slider__item-tags {
+	margin: 0;
+	margin-top: auto;
+}
+
+.section--stages .button {
+	width: 300px;
+	padding: 15px;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.section--stages .button:first-of-type {
+	
+}
+
+.section--stages .button-box {
+	flex-wrap: nowrap;
+	gap: 25px;
+}
+
+.section--stages .button-box .button + p {
+	color: var(--colorGrayTwoMoreTime);
+}
+
+.section--stages .stages__item.stages__item_note {
+	padding: 20px 0;
+	background-color: transparent;
+}
+
+.section--stages .stages__item.stages__item_note.mobile {
+	display: none;
+}
+
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 1024px) {
+	
+	.section--stages .subtitle {
+		max-width: 66%;
+	}
+
+	.section--stages .stages__title-box {
+		max-width: 66%;
+	}
+
+	
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 991px) {
+	
+
+	
+}
+/* ↑↑↑ 991px ↑↑↑ */
+
+
+
+@media (max-width: 820px) {
+	
+	.section--stages .subtitle {
+		max-width: 75%;
+	}
+	
+	.section--stages .stages__item {
+		max-width: 100%;
+	}
+
+}
+/* ↑↑↑ 820px ↑↑↑ */
+
+
+
+@media (max-width: 767px) {
+	
+	.section--stages .subtitle {
+		max-width: 100%;
+		margin-bottom: 35px;
+	}
+	
+	.section--stages .button {
+		display: none;
+	}
+	
+	.section--stages .stages__items {
+		flex-wrap: nowrap;
+		padding-bottom: 10px; 
+		overflow-x: auto;
+		scrollbar-width: thin;
+		scrollbar-color: var(--colorBlackSecondary) transparent;
+	}
+	
+	.section--stages .stages__item {
+/*		min-width: 90%;*/
+		min-width: 100%;
+	}
+	
+	.section--stages .title--section .text__important.mobile {
+		display: inline-block;
+	}
+	
+	.section--stages .stages__item.stages__item_note.mobile {
+		display: block;
+	}
+
+}
+/* ↑↑↑ 767px ↑↑↑ */
+
+
+
+@media (max-width: 534px) {
+	
+
+
+}
+/* ↑↑↑ 534px ↑↑↑ */

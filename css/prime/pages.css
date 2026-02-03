@@ -1,0 +1,52 @@
+/* CONTENT */
+
+@import "../content/content-banner.css";
+@import "../content/content-banner-project.css";
+@import "../content/content-banner-company.css";
+@import "../content/content-page.css";
+@import "../content/content-features.css";
+@import "../content/content-gallery.css";
+@import "../content/content-slider.css";
+@import "../content/content-review-single.css";
+@import "../content/content-seo.css";
+@import "../content/content-calculator.css";
+@import "../content/content-advantages.css";
+
+@import "../content/content-production.css";
+@import "../content/content-design.css";
+@import "../content/content-products.css";
+@import "../content/content-tenders.css";
+@import "../content/content-team.css";
+@import "../content/content-certificates.css";
+
+@import "../content/contacts.css";
+@import "../content/delivery.css";
+@import "../content/privacy.css";
+@import "../content/faq.css";
+
+@import "../content/content-form-trigger.css";
+
+
+/* CATALOG */
+@import "../catalog/catalog-projects.css";
+@import "../catalog/catalog-projects-detail.css";
+
+@import "../catalog/catalog-solutions.css";
+@import "../catalog/catalog-solutions-detail.css";
+
+@import "../catalog/catalog-products.css";
+@import "../catalog/catalog-products-detail.css";
+
+@import "../catalog/catalog-merch.css";
+@import "../catalog/catalog-merch-detail.css";
+
+@import "../catalog/catalog-services.css";
+
+
+@import "../catalog/catalog-articles.css";
+
+
+
+/* VARIOUS */
+@import "404.css";
+@import "button-up.css";

@@ -1,0 +1,222 @@
+.content-page .section--articles .subtitle {
+	margin: 20px 0 65px;
+}
+
+.content-page .section--articles .articles__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+	margin-bottom: 35px;
+}
+
+.content-page .section--articles .articles__item {
+    flex-basis: calc((100% - 2 * 25px) / 3);
+    max-width: calc((100% - 2 * 25px) / 3);
+}
+
+.content-page .section--articles .articles__list-title {
+	margin-top: auto;
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--colorGrayOneMore);
+}
+
+.content-page .section--articles .articles__list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.content-page .section--articles .articles__list-item {
+	padding: 10px;
+	background-color: var(--colorGrayBG);
+	border-radius: 20px;
+}
+
+.content-page .section--articles .articles__list-link {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.content-page .section--articles .articles__list-image {
+	flex-shrink: 0;
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content-page .section--articles .articles__list-text {
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--colorBlackEighth);
+}
+
+.content-page .section--articles .articles__title {
+	padding-right: 0;
+}
+
+.content-page .section--articles .slider__button-container {
+	display: none;
+}
+
+/* --- ARTICLES TABS --- */
+
+.articles__tabs .title {
+	margin-bottom: 20px;
+	color: var(--colorBlackZero);
+}
+
+.articles__tabs .tabs {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 15px;
+	cursor: pointer;
+	margin-bottom: 120px;
+}
+
+.articles__tabs .tab {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+/*	flex-grow: 1;*/
+	flex-grow: 0;
+	padding: 20px 25px;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+/*	text-transform: uppercase;*/
+	white-space: nowrap;
+	color: var(--colorBlackFifth);
+	background-color: var(--colorWhite);
+	border: none;
+	border-radius: 20px;
+	transition: all 0.75s;
+}
+
+.articles__tabs .tab:hover {
+	color: var(--colorWhite);
+	background-color: var(--colorBlackSeventh);
+}
+
+.articles__tabs .tab.active {
+	color: var(--colorWhite);
+	background-color: var(--colorBlackFifth);
+}
+
+.articles__tabs .tab-text {
+	font-weight: 500;
+}
+
+.articles__tabs .content {
+/*
+	border: 1px solid #ccc;
+	padding: 20px;
+*/
+}
+
+.articles__tabs .content .tab-content:not(.active) {
+	display: none;
+}
+
+/* --- / ARTICLES TABS --- */
+
+
+
+/* --- PAGINATION --- */
+
+.pagination {
+    scroll-margin-top: 200px;
+	display: flex;
+	gap: 20px;
+}
+
+.pagination .button {
+	color: var(--colorBlackFifth);
+	background-color: var(--colorWhite);
+	transition: all 1s;
+}
+
+.pagination .button:hover {
+	color: var(--colorWhite);
+	background-color: var(--colorBlackSeventh);
+}
+
+.pagination .button.active {
+	color: var(--colorWhite);
+	background-color: var(--colorBlackFifth);
+}
+
+/* --- / PAGINATION --- */
+
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 1180px) {
+	
+	.content-page .section--articles .articles__items {
+		gap: 12px;
+	}
+	
+	.content-page .section--articles .articles__item {
+		flex-basis: calc((100% - 12px) / 2);
+		max-width: calc((100% - 12px) / 2);
+	}
+	
+}
+/* ↑↑↑ 1180px ↑↑↑ */
+
+
+
+@media (max-width: 1024px) {
+	
+	.content-page .section--articles .subtitle {
+		font-size: 24px;
+		line-height: 1.5;
+	}
+	
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+@media (max-width: 767px) {
+	
+	.content-page .section--articles .articles__item {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	
+	.articles__tabs .tabs {
+		margin-bottom: 60px;
+		padding-bottom: 10px;
+		overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--colorBlackSecondary) transparent;
+	}
+	
+	.pagination {
+		padding-bottom: 10px;
+		overflow-x: auto;
+		scrollbar-width: thin;
+		scrollbar-color: var(--colorBlackSecondary) transparent;
+	}
+	
+}
+/* ↑↑↑ 767px ↑↑↑ */
+
+
+@media (max-width: 534px) {
+	
+	.content-page .section--articles .slider__button-container {
+		display: none;
+	}
+
+}
+/* ↑↑↑ 534px ↑↑↑ */

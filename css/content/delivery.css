@@ -1,0 +1,58 @@
+.section--delivery .title--section, 
+.section--payment .title--section {
+	margin-bottom: 20px;
+}
+
+.section--delivery .text_pages, 
+.section--payment .text_pages {
+	font-weight: 500;
+	line-height: 1.5;
+	color: var(--colorBlackMain);
+}
+
+.section--delivery .text_pages:last-of-type, 
+.section--payment .text_pages:last-of-type {
+    margin-bottom: 0;
+}
+
+.section--delivery .title--item, 
+.section--payment .title--item {
+	margin: 40px 0 20px;
+}
+
+.section--delivery .delivery-gallery {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.section--delivery .delivery-gallery__item {
+	border-radius: 20px;
+}
+
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 1180px) {
+	
+	.section--delivery .delivery-gallery {
+		flex-wrap: wrap;
+	}
+	
+}
+/* ↑↑↑ 1180px ↑↑↑ */
+
+
+@media (max-width: 767px) {
+	
+	.section--delivery .delivery-gallery {
+		flex-wrap: nowrap;
+		padding-bottom: 10px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--colorBlackSecondary) transparent;
+	}
+	
+}
+/* ↑↑↑ 767px ↑↑↑ */

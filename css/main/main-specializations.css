@@ -1,0 +1,144 @@
+.section--specializations {
+	margin-bottom: 100px;
+}
+
+.section--specializations .title--section {
+	margin-bottom: 20px;
+}
+
+.section--specializations .subtitle {
+	margin: 15px 0 45px;
+	line-height: 1.5;
+	color: var(--colorGrayEither);
+}
+
+.spec__inner {
+	display: flex;
+	gap: 50px;
+}
+
+.spec__inner-left {
+	flex-basis: calc((100% - 50px) / 2);
+}
+
+.spec__inner-right {
+	flex-basis: calc((100% - 50px) / 2);
+	flex-shrink: 0;
+}
+
+.specs__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.specs__item {
+    flex-basis: calc((100% - 2 * 25px) / 3);
+    max-width: calc((100% - 2 * 25px) / 3);
+}
+
+.section--specializations .slider__item-subtitle {
+	margin-top: 5px;
+	margin-bottom: 45px;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.section--specializations .slider__item-info {
+	padding: 25px;
+}
+
+.section--specializations .aside {
+	margin-top: 20px;
+	border: 1px solid var(--colorGrayLight);
+	border-radius: 20px;
+}
+
+.section--specializations .aside .spec-filter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 35px;
+	padding: 20px;
+}
+
+
+
+/* --- ADAPTING --- */
+
+@media (max-width: 991px) {
+
+	.spec__inner {
+		flex-direction: column;
+		gap: 0;
+		margin-bottom: 25px;
+	}
+	
+	.section--specializations .filter-counter {
+		display: none;
+	}
+	
+	.section--specializations .subtitle {
+		margin: 15px 0 25px;
+	}
+	
+	.section--specializations .aside {
+		margin-top: 0;
+		border: none;
+	}
+	
+	.section--specializations .aside .form-label_checkbox {
+		padding: 15px;
+		border: 1px solid var(--colorGrayLight);
+		border-radius: 20px;
+	}
+	
+	.section--specializations .aside .spec-filter {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 10px;
+		padding: 0;
+	}
+	
+	.specs__item {
+		flex-basis: calc((100% - 25px) / 2);
+		max-width: calc((100% - 25px) / 2);
+	}
+	
+}
+/* ↑↑↑ 991px ↑↑↑ */
+
+
+
+
+@media (max-width: 767px) {
+	
+	.main-page:not(.content-page) .specs__items {
+		flex-wrap: nowrap;
+		gap: 12px;
+/*		margin-bottom: 30px;*/
+		border: none;
+		overflow-x: auto;
+		/* overflow-y: hidden; */
+		scrollbar-width: thin;
+		scrollbar-color: var(--colorBlackSecondary) transparent;
+	}
+	
+	.main-page:not(.content-page) .specs__item {
+		min-width: 95%;
+		height: auto;
+		padding-bottom: 10px;
+		opacity: 1;
+	}
+	
+
+	.main-page:not(.content-page) .section--specializations .button.show-more, 
+	.main-page:not(.content-page) .section--specializations .button.show-less {
+		display: none !important;
+	}
+
+	
+}
+/* ↑↑↑ 767px ↑↑↑ */
